@@ -6,6 +6,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
+    id("com.google.gms.google-services")
 //    id("com.google.gms.google-services")
 }
 
@@ -65,17 +66,17 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.navigation:navigation-compose:2.7.5")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.20" ) // Use the latest version
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.20" )
 
-
-//    implementation("com.google.firebase:firebase-analytics")
-//    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
-//    implementation("com.google.firebase:firebase-auth")
-//    implementation("com.google.firebase:firebase-firestore")
-//    implementation("com.google.firebase:firebase-storage-ktx")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-storage-ktx")
 
     implementation ("androidx.hilt:hilt-navigation-compose:1.1.0")
     implementation("com.google.dagger:hilt-android:2.49")
+    implementation("com.google.firebase:firebase-database:20.3.0")
     kapt("com.google.dagger:hilt-compiler:2.49")
 
     implementation ("io.coil-kt:coil-compose:2.5.0")

@@ -20,5 +20,6 @@ buildscript {
         classpath ("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10" ) // Use the latest version
 //        classpath ("com.google.gms:google-services:4.4.0")
         classpath ("com.google.dagger:hilt-android-gradle-plugin:2.49")
+        classpath("com.google.gms:google-services:4.4.0")
     }
 }
